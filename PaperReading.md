@@ -161,16 +161,24 @@
   - 空间交互理论方法
 
 - 未来研究方向
+
   - 多学科研究方法交叉融合
+
   - 多源异构数据的管理和计算
+
   - 多源异构数据的挖掘和分析
+
     - 半监督学习
     - 集成学习
     - 迁移学习
     - 概率图模型
+
   - 与实际问题结合
+
     - 帮助理解疾病传播
     - 帮助合理规划交通设施
+
+    
 
 #### Discovering Spatial Interaction Communities from Mobile Phone Data
 
@@ -183,6 +191,32 @@
 ##### *Causal Inference and Stable Learning*
 
 https://icml.cc/Conferences/2019/ScheduleMultitrack?event=4348
+
+
+
+## 0x03 算法与程序设计
+
+#### Traversing binary trees simply and cheaply
+
+https://www.sciencedirect.com/science/article/abs/pii/0020019079900681
+
+一种时间复杂度为O(N)空间复杂度为O(1)的二叉树前序遍历方式——莫里斯遍历。
+
+
+
+## 0x04 社会科学
+
+#### **National income inequality predicts** cultural variation in mouth to mouth kissing
+
+https://www.nature.com/articles/s41598-019-43267-7
+
+这篇文章选择“接吻”作为研究对象，发现收入情况与接吻频率存在较强的相关性。
+
+基于“接吻是有成本的（可能导致传染），人们的接吻是有选择性的，并且会是一种权衡（能够增进长期感情）”的想法，文章开展研究，提出了pair bonding假设，……。最后得出结论：在一定的严酷条件下，个体亲吻其伴侣的强度可能更高，这也许对维持长期稳定的亲密关系有重要作用。
+
+
+
+
 
 
 
