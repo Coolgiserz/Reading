@@ -183,6 +183,10 @@
 
 北大遥感与地理信息研究所的工作。针对移动手机数据进行空间社区挖掘。
 
+#### Multiscale 
+
+
+
 #### Human Mobility from theory to practice/Data, Models and Applications
 
 关于人类移动性的会议文章，总结了数据、模型和应用方面的内容。
@@ -205,17 +209,25 @@
 
 ##### 人类移动性研究主题
 
+#### 
+
 
 
 
 
 ## 0x02 机器学习
 
-##### *Causal Inference and Stable Learning*
+#### Causal Inference and Stable Learning*
 
 https://icml.cc/Conferences/2019/ScheduleMultitrack?event=4348
 
+#### Self-supervised Learning on Graphs/ Deep Insights and New Directions
 
+图上的自监督学习方法，主要围绕“如何从无标注数据中提取有用信息？”这一问题，研究了多种图上自监督学习的前置任务（包括基于图局部结构、全局结构、属性特征的前置任务），另外提出了一个新的研究方向SelfTask，利用特定任务中数据的标签信息构造前置任务。
+
+文章除了探讨多种自监督前置任务的效果，还对比了两种自监督学习策略：联合训练、两阶段训练。
+
+【评：文章没有从「提取通用的图特征」这一角度研究自监督学习，而重点关注从无标注数据中提取信息。所认为“最佳“的学习策略联合训练，必须在特定任务中去做，与CV领域的预训练模型不同（可以先在很大的数据集提取通用的特征，然后再在下游任务微调）】
 
 ## 0x03 深度学习
 
@@ -247,7 +259,13 @@ https://www.nature.com/articles/s41598-019-43267-7
 
 
 
-## 0x06 测绘科学
+## 0x06 自然语言处理
+
+#### A survey of named entity recognition and classification
+
+
+
+## 0x07 测绘科学
 
 #### 点云智能研究进展与趋势
 
