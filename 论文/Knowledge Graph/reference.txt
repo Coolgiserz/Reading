@@ -1,0 +1,2 @@
+Introducing the Knowledge Graph: things, not strings：https://www.blog.google/products/search/introducing-knowledge-graph-things-not/
+开放地理知识图谱：http://www.openkg.cn/group/geography
