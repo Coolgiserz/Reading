@@ -209,6 +209,8 @@
 
 ##### 人类移动性研究主题
 
+- 
+
 #### 
 
 
@@ -217,11 +219,11 @@
 
 ## 0x02 机器学习
 
-#### Causal Inference and Stable Learning*
+#### 1 Causal Inference and Stable Learning*
 
 https://icml.cc/Conferences/2019/ScheduleMultitrack?event=4348
 
-#### Self-supervised Learning on Graphs/ Deep Insights and New Directions
+#### 2 Self-supervised Learning on Graphs/ Deep Insights and New Directions
 
 图上的自监督学习方法，主要围绕“如何从无标注数据中提取有用信息？”这一问题，研究了多种图上自监督学习的前置任务（包括基于图局部结构、全局结构、属性特征的前置任务），另外提出了一个新的研究方向SelfTask，利用特定任务中数据的标签信息构造前置任务。
 
@@ -229,11 +231,71 @@ https://icml.cc/Conferences/2019/ScheduleMultitrack?event=4348
 
 【评：文章没有从「提取通用的图特征」这一角度研究自监督学习，而重点关注从无标注数据中提取信息。所认为“最佳“的学习策略联合训练，必须在特定任务中去做，与CV领域的预训练模型不同（可以先在很大的数据集提取通用的特征，然后再在下游任务微调）】
 
+#### 3 Contrastive Multi-View Representation Learning on Graphs
+
+#### 4 Prototypical Contrastive Learning of Unsupervised Representations
+
+https://github.com/salesforce/PCL
+
+https://paperswithcode.com/method/moco
+
+近年来无监督视觉表示的进步主要由实例判别任务驱动，这些方法通常包括两个关键组件：图像变换和对比损失。
+
+- 图像变换的目的是为了什么？可以如何变换？
+
+通过数据增强、补丁扰动、动量特征等方法生成可以表示同一张图片的多个嵌入。
+
+- 对比损失的目的是？
+
+保证由同一实例所生成的样本的嵌入向量更相近，不同实例所生成的样本更加远。
+
+【问题：什么叫做“不同”的实例？通过什么来区分？两只相同品种的猫图像算是一个实例还是两个实例？】
+
+- 现有实例判别方法的主要缺点在于？
+
+  没有将语义信息编码到隐表示中，两个实例哪怕具有相同的语义，也会被人做是负样本对，对比loss会使它们的隐表示相隔较远。
+
+- 本文提出的原型对比学习（prototypical contrastive learning，PCL）如何 将数据的语义结构编码到嵌入空间中？
+
+  定义原型：一组语义上相似的实例
+
+  如何寻找原型？对嵌入向量进行不同尺度聚类
+
+  构造对比损失的目的是？使同一个原型内样本的嵌入向量尽可能相似
+
+  【个人评价：聚类、语义相似度本身是一个很大很开放的问题，多尺度聚类也是一个难点】
+
+- 如何进行训练/学习？
+
+  把PCL形式化为一个期望最大化算法。
+
+  E-step：进行K-Means聚类
+
+  M-step：最小化对比损失（ProtoNCE）以更新网络参数。（这个过程等价于最大化对数似然）
+
+- PCL与广泛应用的实例判别任务有何关系？
+
+  实例判别可看作是原型对比学习的一个特例，每个实例的原型都是其增强的特征。
+
+- 对于无监督/自监督的研究可以分为什么流派
+
+  实例级别的对比学习
+
+  深度无监督聚类
+
+  自监督pretext tasks
+
+- ……
+
 ## 0x03 深度学习
 
 ### 图深度学习
 
 #### A Comprehensive Survey on Graph Neural Networks
+
+#### Contrastive Multi-View Representation Learning on Graphs
+
+#### GMNN: Graph Markov Neural Networks
 
 
 
@@ -261,9 +323,11 @@ https://www.nature.com/articles/s41598-019-43267-7
 
 ## 0x06 自然语言处理
 
+### 信息抽取
+
 #### A survey of named entity recognition and classification
 
-
+什么是命名实体识别？什么是实体？命名实体识别有什么方法？有什么挑战？
 
 ## 0x07 测绘科学
 
